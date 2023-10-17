@@ -4,7 +4,7 @@
 texto1 = '"Sou do"'
 
 # texto2 recebe valor o "back-end"
-texto2 = "\"back-end\""
+texto2 = "\"back-end JR\""
 
 # a função print, concatena e imprime as duas variaveis na tela
 print(texto1, texto2)
