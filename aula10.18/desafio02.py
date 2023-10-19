@@ -4,4 +4,3 @@ nome = input('Digite seu nome')
 
 print (int (idade) * int (idade_parente))
 print(nome)
-
