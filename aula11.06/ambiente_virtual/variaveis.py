@@ -12,5 +12,3 @@ varo2 = "A" + "B" "C"
 print(varo2) 
 varo2 = "A" * 10
 print(varo2)
-varo2 = 10 * "Paulo"
-print(varo2, "Paulo")
