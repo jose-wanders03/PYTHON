@@ -15,7 +15,7 @@ print (media(nota01, nota02, nota03))
 
 def calcula_horas_extras(quantidades_horas, valor_da_hora):
     horas = float(quantidades_horas)
-    taxa = float(valor_hora)
+    taxa = float(valor_horas)
 
     if horas >= 40:
         valor_receber = ( horas - 40) * taxa

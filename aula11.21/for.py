@@ -3,7 +3,7 @@
 # iter()
 # next ()
 
-'''nome = 'Wanderson'
+nome = 'Wanderson'
 letra = iter(nome)
 print(next(letra))
 print(next(letra))
@@ -11,7 +11,7 @@ print(next(letra))
 print(next(letra))
 
 for letra in nome:
-    print(letra)'''
+    print(letra)
 
 # enumerate () é um interador de indices e valores
 
