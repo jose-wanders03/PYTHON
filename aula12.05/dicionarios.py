@@ -1,72 +1,82 @@
-# possuem CHAVE(KEYS) e VALOR(VALLUES)
-# paremetro: () ou dict()
 
-'''
+# possuem CHAVE(CHAVES) e VALOR(VALORES)
+# parametro: {} ou dict()
+
 pessoa = { 'nome': 'Paulo',
-          'sobrenome ': 'Junior1'
-        'nome 2'    :     'Rodrigo'
-          'sobrenome ': 'Junior2
-          'sobrenome 4':   'junior' }
- 
-print(len(pessoa))
-print(pessoa.keys())
-print(pessoa.values())
+            'sobrenome': 'Junior 2',
+            'nome 2': 'Rodrigo',
+            'sobrenome': 'Junior 1',
+            'sobrenome 4': 'Junior',
+             'idade': 23 }
 
-k = pessoa.keys()
-k = pessoa.values()
+impressão(len(pessoa))
+impressão(pessoa.Chaves())
+impressão(pessoa.Valores())
 
-for chave in pessoa:
-    print(chave)
+k = pessoa. Chaves()
+v = pessoa. Valores()
 
-for valor in v:
-    print(valor)
+Para chave em K:
+    impressão(chave)
 
-print("="*20)
+impressão("="*20)
 
-for valor in pessoa.values():
-    print(chave)
+Para Valor em V:
+    impressão(valor)
 
-for chave, valor in pessoa.items( ):
-    print(chave, valor)                                
+impressão("="*20)
 
-i = pessoa.items(
-    print(i))
+Para chave em pessoa:
+    impressão(chave)
+
+impressão("="*20)
+
+para valor em pessoa. valores():
+    impressão(valor)
+
+impressão("="*20)
+
+Para Chave, valor em Pessoa. itens():
+    impressão(chave, valor)
+
+impressão("="*20)
+
+i = pessoa. Itens()
+impressão(i)
+
+impressão("="*20)
+
+print('sobrenome 4'])
+print(pessoa['sobrenome'])
+print(pessoa['idade'])
+
+impressão("="*20)
 
 
-print("="*20)
-
-print(pessoa['sobrenome2 '])
-print('sobrenome')'''
-
-
-
-
-d1 = {'valor1': 100,
-       'valor2': 200,
+d1 = { 'valor1': 100,
+       «valor2»: 200,
        'valor3': 300, }
 
+d2 = d1. copiar()
 
-d2 = d1
+impressão(d1)
 
-print(d1)
+d2['valor2'] = 'Jefferson'
 
+impressão(d1)
 
-d2['valor2'] = 'Wanderson'
+impressão(d2)
 
-print(d1)
+impressão(d2.get('valor2'))
 
-print((d2))
+d3 = d1. pop('valor3')
 
-print(d2.get('valor2'))
-
-d3 = d1.pop('valor3')
-print(d1)
+impressão(d1)
 
 outro_nome = {'valor5': 5,
-              'valor6': 6}
+              'valor6': 6  }
 
-d1.update(outro_nome)
+d1. atualização(outro_nome)
 
-print(d1)
-
-print(d1.has_key('valor1'))
+impressão(d1)
+impressão(d1.has_key("valor5"))
