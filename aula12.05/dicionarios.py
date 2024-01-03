@@ -1,6 +1,6 @@
-
 # possuem CHAVE(CHAVES) e VALOR(VALORES)
 # parametro: {} ou dict()
+# 
 
 pessoa = { 'nome': 'Paulo',
             'sobrenome': 'Junior 2',
@@ -79,4 +79,5 @@ outro_nome = {'valor5': 5,
 d1. atualização(outro_nome)
 
 impressão(d1)
+
 impressão(d1.has_key("valor5"))
