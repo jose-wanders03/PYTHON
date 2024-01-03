@@ -11,7 +11,4 @@ class FoneDeOuvido:
 fone = FoneDeOuvido()
 
 fone.volume = (200)
-print(fone.get_volume())  
-
-
-
+print(fone.get_volume())
