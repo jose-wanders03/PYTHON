@@ -1,109 +1,103 @@
-# 1. crie uma lista de alunos com nome e nota final de cada aluno e coloque em um dicionario, depois imprima
+# 1. Crie uma lista de alunos com nome e nota final de cada aluno e coloque em um dicionario, depois imprima.
+# lista_de_alunos = [['paulo', 5], ['joao', 7], ['rodrigo', 9]]
+# dic = {}
+# dic.update(lista_de_alunos)
+# print(dic)
 
-'''lista_de_alunos = [['Pedro' 5] , ['Thiago' 6] , ['João' 8] , ['Rafael', 10]]
-dic = {}
-dic.update(lista_de_alunos)
-print(dic)'''
+# 2. Ainda sobre a questão 1. Inserir mais 04 alunos e notas no seu dicionario.
 
-# Ainda sobre a questão 1. Inserir mais 04 alunos e notas no seu dicionario
+# 3. faça um codigo que pede a marca e o modelo do carro do cliente insere ele em uma lista e depois transforma em um dicionario. Imprima os dois resultados.
 
+# lista_de_carros = []
+# marca = input('informe o MARCA do seu carro: ')
+# modelo = input('informe o MODELO do seu carro: ')
+# lista_de_carros.append(marca)
+# lista_de_carros.append(modelo)
 
+# lista_de_frutas = 'maçã', 4.50
+# print(type(lista_de_frutas))
 
-# Faça um código que pede a marca e o modelo do carro do cliente, insira ele em uma lista e depois transforme em um dicionario. Imprima os dois
+# dic_carros = {}
+# dic_carros.update([lista_de_carros])
 
-'''lista_de_carros = []
-marca = input("Digite a marca do carro: ")
-modelo = input("Digite o modelo do carro: ")
-lista_de_carros.append({marca})
-lista_de_carros.append({modelo})
+# print(lista_de_carros)
+# print(dic_carros)
 
-dic_carros = {}
-dic_carros.update([lista_de_carros])
+# dic_carros['Fiat'] = 'Uno'
 
-print(lista_de_carros)
-print(dic_carros)
+# print(dic_carros)
 
-dic_carros['Fiat'] = 'Uno'
-print(dic_carros)'''
+# 4. crie um cadastro de clientes recebendo nome, idade, data de aniversario e endereço completo(rua, numero da residencia e bairro). Adicione todas as informações em um dicionario. Imprima ao final.
 
+# 5. vamos criar um sistema de login e senha. crie um dicionario contendo os acessos dos colaboradores com nome de usuario e senha. em seguida peça as informações e valide o login do usuario.
 
+# dic_acessos = { 
+#     'paulo': '123456', 
+#     'joao': '121212' 
+# }
+# usuario_senha = {}
+# usuario = input('Informe seu USUARIO: ')
+# senha = input('Informe sua SENHA: ')
+# usuario_senha[usuario] = senha
 
-# 4 crie um cadastro de clientes recebendo nome, idade, data de aniversário e endereço completo.  Adicione todas às informações em um dicionario. Imprima ao final.
-'''dic = {'nome': 'Wanderson'}    
-dic.update({'idade': 20 })
-dic.update(aniversario = '14/06/2003')
-dic.update(endereco = 'Pv de Gostosa, Zona Rual, s/n, Amontada-Ce') 
-print(dic)'''
+# for chave in dic_acessos.keys():
+#     if chave == usuario:
+#         if dic_acessos[chave] == senha:
+#             print("Acesso liberado!")
+#             break
+#         else:
+#             print(f'Senha incorreta para o usuario { usuario }')
+#             break
+# else:
+#     print('usuario')
 
+# MATRIZES EM PYTHON
+# matriz = {'inicio': 'Paulo',
+#           'meio': [4, 5, 6],
+#           'fim': [7, 8, 9],
+# }
+# print(matriz['inicio'])
 
+# 6. faça um quiz utilizando um dicionario com as seguintes chaves: Perguta, opções e resposta. Faça a validação da opção escolhida com a respota e imprima.
 
-# 5 Vamos criar um sistema de login e senha. Crie um dicionario contendo os acessos dos colaboradores com o nome de usuario e senha, em seguida peça as informações e valide o login do usuario.
+perguntas =[
+    {'Pergunta': 'Quanto é 5 x 5?',
+     'Opções': [12, 16, 20, 25],
+     'Resposta': 25,},
 
-'''lista_de_usuario = {}
+    {'Pergunta': 'Quanto é 12 / 4?',
+     'Opções': [6, 13, 3, 2],
+     'Resposta': 3,},
 
-usuario =input("Digite nome de usuario: ")
-senha = int(input("Digite sua senha: "))
-    
-for i in range(4):'''
-
-
-
-# 6. Faça um quizz utilizando um dicionario com as seguintes chaves: Pergunta, opções e resposta. Faça a validação da opção escolhida com a resposta e imprima
-pergunta = [
-           {"Pergunta": " Qual a capital do Ceará?",
-            "Opções": ["a) Florianopolis", "b) Rio de Janeiro", "c) Brasília", "d) Fortaleza"],
-            "Resposta": "d"},
-
-            {"Pergunta": " Qual o maior estado brasileiro?",
-            "Opções": ["a) Amazonas", "b) Uruguai", "c) Brasília", "d) Fortaleza"],
-            "Resposta": "a"},
-
-            {"Pergunta": "Em qual região do Brasil está localizado o Maranhão?",
-            "Opções": ["a) Sul", "b) Nordeste", "c) Noroeste", "d) Sudeste"],
-            "Resposta": "b"},
-
-            {"Pergunta": "Em qual cidade do Ceará está localizada a estátua de Padre Cícero?",
-            "Opções": ["a) Juazeiro do Norte", "b) Sobral", "c) Itapipoca", "d) Fortaleza"],
-            "Resposta": "a"},
-
-            {"Pergunta": " Qual dos estados abaixo faz parte da região norte do Brasil?",
-            "Opções": ["a)Brasília ", "b) Rio de Janeiro", "c) Pará", "d) Fortaleza"],
-            "Resposta": "c"},
+    {'Pergunta': 'Quanto é 15 + 15?',
+     'Opções': [14, 15, 30, 25],
+     'Resposta': 30,},
 ]
-
-for pergunta in pergunta:
-    print('pergunta:', pergunta['pergunta'])
+qtd_acertos = 0
+for pergunta in perguntas:
+    print('Pergunta:', pergunta['Pergunta'])
     print()
 
-    for i, opcao in enumerate(pergunta["Opções"]):
+    for i, opcao in enumerate(pergunta['Opções']):
         print(f'{i+1})', opcao)
-        print()
-   
+    print()
 
-resposta_escolhida = int(input("Escolha a opção correta: "))
-acertou = False
+    escolha = int(input('Escolha sua opção: '))
+    acertou = False
 
-if resposta_escolhida == int(pergunta['Resposta'])
-acertou = True    
-print()
+    if escolha == int(pergunta['Resposta']):
+        acertou = True
 
-if acertou:
-    print("Parabéns! Você acertou!")
-else:
-    print(f"Ops! A resposta correta era {pergunta['Resposta']}. Tente novamente.")
+    print()
+    if acertou:
+        qtd_acertos += 1
+        print('Acertou 👍')
+    else:
+        print('Errou 😔')
 
+    print()
 
-
-
-
-# MATRIZES PYTHON
-
-'''matriz =[[1],[2],[3],
-         [4],[5],[6],
-         [7],[8],[9],
-]
-
-print(matriz[4][0])'''
+print(f'Você acertou { qtd_acertos } de { len(perguntas) }')
 
 
 
