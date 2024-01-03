@@ -1,24 +1,22 @@
-# Crie abstração para uma super classe funcionario com duas subclasses.
+# crie abstração para uma super classe funcionario com duas subclasses. Imprima todos do dados.
 
-
-class Empresa:
-    def __init__(self, nome, idade, jornada_de_trabalho, salario, função):
-        self.nome = nome 
-        self.idade = idade
+class Funcionarios:
+    def __init__(self, nome, salario):
+        self.nome = nome
         self.salario = salario
-        self.função = função
-        return f' Tenho um sálario de: {self.salario}, minha função é : {self.função} '
-
-
-class Funcionarios(Empresa):
-        pass
+    
+    def get_nome(self):
+        return self.nome 
+    
+    def get_salario(self):
+        return self.salario
     
     
-    
+class Gerente(Funcionarios):
+    pass
 
-pessoa = Funcionarios()
-print(f'Meu nome é {empresa.nome}, tenho {empresa.idade}, recebo um salário de {empresa.salario} sendo {empresa.Contador}')
-
+class Desenvolvedor(Funcionarios):
+    pass
 
 
 
